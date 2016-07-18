@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/icon_largeloading"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    >
+
+
+</rotate><!-- From: file:/root/AndroidStudioProjects/ClickTon/ClickTone/library/src/main/res/anim/progressbar_rotate_anim.xml -->

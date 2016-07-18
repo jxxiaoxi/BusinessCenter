@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="google_colors">
+
+        <item>@color/blue</item>
+        <item>@color/lightblue</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+    </integer-array>
+
+</resources>
