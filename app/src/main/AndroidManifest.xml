@@ -171,7 +171,11 @@
         <!-- jpush end -->
         <activity android:name=".activity.OwnRegisterActivity" />
         <activity android:name=".activity.OtherRegisterActivity" />
-        <activity android:name=".activity.IntegralTransferActivity"></activity>
+        <activity android:name=".activity.IntegralTransferActivity" />
+        <activity android:name=".activity.GoldTransferActivity" />
+        <activity android:name=".activity.RechargeActivity" />
+        <activity android:name=".activity.WithdRawalsActivity" />
+        <activity android:name=".activity.AutoPushListActivity"></activity>
     </application>
 
 </manifest>

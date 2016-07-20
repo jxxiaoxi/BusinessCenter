@@ -69,6 +69,53 @@
     <string name="consumption_integral">消费积分：</string>
     <string name="gold_1">金币:</string>
     <string name="transfer_object_number">转账对象帐号:</string>
+    <string name="integral_transfer_100">转出100积分</string>
+    <string name="integral_transfer_200">转出200积分</string>
+    <string name="integral_transfer_300">转出300积分</string>
+    <string name="integral_transfer_400">转出400积分</string>
+    <string name="integral_transfer_500">转出500积分</string>
+    <string name="integral_transfer_600">转出600积分</string>
+    <string name="integral_transfer_700">转出700积分</string>
+    <string name="integral_transfer_1000">转出1000积分</string>
+    <string name="integral_transfer_2000">转出2000积分</string>
+    <string name="integral_transfer_other">其他积分：</string>
+    <string name="integral">积分</string>
+
+    <string name="gold_transfer_100">转出100金币</string>
+    <string name="gold_transfer_200">转出200金币</string>
+    <string name="gold_transfer_300">转出300金币</string>
+    <string name="gold_transfer_400">转出400金币</string>
+    <string name="gold_transfer_500">转出500金币</string>
+    <string name="gold_transfer_600">转出600金币</string>
+    <string name="gold_transfer_700">转出700金币</string>
+    <string name="gold_transfer_1000">转出1000金币</string>
+    <string name="gold_transfer_2000">转出2000金币</string>
+    <string name="gold_transfer_other">其他金额：</string>
+    <string name="submit_transfer">确定转账</string>
+
+    <string name="recharge_100">充值100元</string>
+    <string name="recharge_200">充值200元</string>
+    <string name="recharge_300">充值300元</string>
+    <string name="recharge_400">充值400元</string>
+    <string name="recharge_500">充值500元</string>
+    <string name="recharge_600">充值600元</string>
+    <string name="recharge_700">充值700元</string>
+    <string name="recharge_1000">充值1000元</string>
+    <string name="recharge_2000">充值2000元</string>
+    <string name="recharge_other">其他金额：</string>
+    <string name="bank_name">银行名称：</string>
+    <string name="yuan">元</string>
+
+
+    <string name="input_user_name">请输入用户名</string>
+    <string name="query_time">查询时间：</string>
+    <string name="start_time">开始时间</string>
+    <string name="to">至   ：</string>
+    <string name="end_time">结束时间</string>
+    <string name="is_out">是否出局：</string>
+    <string name="can_choice">可选择</string>
+
+
 
 
     <!-- app更新 -->

@@ -13,24 +13,28 @@
         android:textSize="@dimen/ts_22" />
 
     <Button
+        android:id="@+id/gold_transfer"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
         android:text="@string/gold_transfer" />
 
     <Button
+        android:id="@+id/integral_transfer"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
         android:text="@string/integral_transfer" />
 
     <Button
+        android:id="@+id/recharge"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
         android:text="@string/recharge" />
 
     <Button
+        android:id="@+id/withd_rawals"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"

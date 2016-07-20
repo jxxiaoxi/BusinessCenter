@@ -1,66 +1,88 @@
 package com.mhtl.businesscenter.fragment;
 
-import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.mhtl.businesscenter.R;
+import com.mhtl.businesscenter.activity.OtherRegisterActivity;
+import com.mhtl.businesscenter.activity.OwnRegisterActivity;
 
 
 public class UserFragment extends Fragment {
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    private String mParam1;
-    private String mParam2;
-
-    private OnFragmentInteractionListener mListener;
-
-    public UserFragment() {
-
-    }
-
-    public static UserFragment newInstance(String param1, String param2) {
-        UserFragment fragment = new UserFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    Button bt_cover_list, bt_network, bt_sales_info, bt_modify_password, bt_user_info_modify, bt_user_info;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_user, container, false);
+        View view = inflater.inflate(R.layout.fragment_user, container, false);
+        initView(view);
+        return view;
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
+    private void initView(View view) {
+        bt_cover_list = (Button) view.findViewById(R.id.bt_cover_list);
+        bt_network = (Button) view.findViewById(R.id.bt_network);
+
+        bt_sales_info = (Button) view.findViewById(R.id.bt_sales_info);
+        bt_modify_password = (Button) view.findViewById(R.id.bt_modify_password);
+
+        bt_user_info_modify = (Button) view.findViewById(R.id.bt_user_info_modify);
+        bt_user_info = (Button) view.findViewById(R.id.bt_user_info);
+
+        initListener();
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
+    private void initListener() {
+        bt_cover_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OwnRegisterActivity.class));
+            }
+        });
+
+        bt_network.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OtherRegisterActivity.class));
+            }
+        });
+
+        bt_sales_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OwnRegisterActivity.class));
+            }
+        });
+
+        bt_modify_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OtherRegisterActivity.class));
+            }
+        });
+        bt_user_info_modify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OwnRegisterActivity.class));
+            }
+        });
+
+        bt_user_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OtherRegisterActivity.class));
+            }
+        });
     }
 
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
 }

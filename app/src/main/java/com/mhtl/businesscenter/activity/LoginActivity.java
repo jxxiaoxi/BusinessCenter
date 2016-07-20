@@ -37,7 +37,6 @@ public class LoginActivity extends BaseActivity {
                 loggin();
             }
         });
-
         tv_password_forget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

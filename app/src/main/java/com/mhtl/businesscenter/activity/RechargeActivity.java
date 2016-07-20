@@ -5,25 +5,17 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.mhtl.businesscenter.R;
 
-import org.w3c.dom.Text;
-
-/*
-* 积分转账
-*
-**/
-
-public class IntegralTransferActivity extends BaseActivity {
+public class RechargeActivity extends BaseActivity {
     private TextView tv_100, tv_200, tv_300, tv_400, tv_500, tv_600, tv_700, tv_1000, tv_2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_integral_transfer);
+        setContentView(R.layout.activity_recharge);
         initUI();
     }
 
@@ -46,6 +38,7 @@ public class IntegralTransferActivity extends BaseActivity {
         setPartTextColor(tv_1000);
         tv_2000 = (TextView) findViewById(R.id.tv_2000);
         setPartTextColor(tv_2000);
-
     }
+
+
 }

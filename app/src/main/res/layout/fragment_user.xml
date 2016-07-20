@@ -15,11 +15,13 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:id="@+id/bt_user_info"
         android:layout_marginTop="@dimen/base_top_9"
         android:text="@string/user_info" />
 
     <Button
         android:layout_width="200dp"
+        android:id="@+id/bt_user_info_modify"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
         android:text="@string/user_info_modify" />
@@ -28,22 +30,26 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
+        android:id="@+id/bt_modify_password"
         android:text="@string/modify_password" />
 
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
+        android:id="@+id/bt_sales_info"
         android:text="@string/sales_info" />
 
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
+        android:id="@+id/bt_network"
         android:text="@string/network" />
 
     <Button
         android:layout_width="200dp"
+        android:id="@+id/bt_cover_list"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_top_9"
         android:text="@string/cover_list" />

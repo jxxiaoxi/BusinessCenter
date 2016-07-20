@@ -1,9 +1,14 @@
 package com.mhtl.businesscenter.activity;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.ForegroundColorSpan;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.mhtl.businesscenter.R;
 import com.umeng.analytics.MobclickAgent;
@@ -117,5 +122,21 @@ public class BaseActivity extends AppCompatActivity {
             }
 
         }
+    }
+
+    public void setPartTextColor(TextView textView) {
+        String text = textView.getText().toString();
+        SpannableStringBuilder builder = new SpannableStringBuilder(text);
+        ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);
+        if (text != null && (text.contains("100") || text.contains("200") || text.contains("300") || text.contains("400") ||
+                text.contains("500") || text.contains("600") || text.contains("700"))) {
+            builder.setSpan(redSpan, 2, 5, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            textView.setText(builder);
+        }
+        if (text != null && (text.contains("1000") || text.contains("2000"))) {
+            builder.setSpan(redSpan, 2, 6, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            textView.setText(builder);
+        }
+
     }
 }
